@@ -656,6 +656,50 @@ footer {
     }
 }
 
+/* Landscape on phones (wide but limited height) - improve flow for large phones in landscape */
+@media (orientation: landscape) and (max-height: 500px) {
+    /* avoid absolute centering which can overlap content when height is small */
+    .header {
+        position: static;
+        transform: none;
+        padding: 20px 20px 10px 20px;
+        max-width: 1000px;
+        margin-top: 10px;
+    }
+
+    .title {
+        font-size: 48px;
+        line-height: 1.05;
+    }
+
+    .header__para {
+        font-size: 16px;
+        max-width: none;
+    }
+
+    /* move the mail button slightly inward so it doesn't overlap edges */
+    .mail__btn {
+        right: 16px;
+        bottom: 12px;
+    }
+
+    /* reduce shapes density and size to avoid clutter */
+    .shape { display: none; }
+
+    /* ensure modal is full-width but not too tall in landscape */
+    .modal {
+        width: 95%;
+        max-width: 1100px;
+        height: auto;
+        max-height: 85vh;
+    }
+
+    .section__title {
+        font-size: 36px;
+        margin-bottom: 28px;
+    }
+}
+
 /* Small Phones */
 
 @media (max-width: 480px) {
