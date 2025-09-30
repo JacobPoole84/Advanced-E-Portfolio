@@ -683,6 +683,7 @@ footer {
 
     .modal {
         top: 80%;
+        height: auto;
     }
 
     .modal__half {
@@ -718,9 +719,6 @@ footer {
     }
     .project__description--sub-title {
         margin-bottom: 8px;
-    }
-    .modal__half {
-        padding: 40px;
     }
     .shape {
         display: none;
