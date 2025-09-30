@@ -328,6 +328,43 @@ nav {
     visibility: visible;
 }
 
+/* Responsive modal: on small screens make modal fixed, limited height, scrollable and stack halves */
+@media (max-width: 700px) {
+    .modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95%;
+        max-width: 420px;
+        height: auto;
+        max-height: 90vh;
+        border-radius: 12px;
+        display: block;
+        overflow: auto;
+        padding: 16px 0;
+    }
+
+    .modal__half {
+        width: 100%;
+        transform: translateX(0%) !important;
+        padding: 18px 20px;
+        box-sizing: border-box;
+    }
+
+    .modal__about {
+        transform: translateY(0%);
+    }
+
+    .modal__contact {
+        transform: translateY(0%);
+    }
+
+    .modal--open .modal {
+        z-index: 9999; /* ensure it's above page content */
+    }
+}
+
 .modal__half {
     width: 50%;
     padding: 40px 72px;
