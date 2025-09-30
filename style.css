@@ -681,17 +681,12 @@ footer {
         display: none;
     }
 
-    /* ensure modal is full-width but not too tall in landscape */
     .modal {
-        width: 95%;
-        max-width: 1100px;
-        height: auto;
-        max-height: 85vh;
+        top: 80%;
     }
 
     .modal__half {
         width: 100%;
-        height: 100%;
     }
 
     .section__title {
