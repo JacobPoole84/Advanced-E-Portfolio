@@ -680,11 +680,11 @@ footer {
     /* move the mail button slightly inward so it doesn't overlap edges */
     .mail__btn {
         right: 16px;
-        bottom: 0;
+        bottom: 0px;
     }
 
     .scroll__icon {
-        bottom: 0;
+        bottom: 0px;
     }
 
     /* reduce shapes density and size to avoid clutter */
