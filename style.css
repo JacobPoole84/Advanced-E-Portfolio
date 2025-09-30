@@ -677,18 +677,9 @@ footer {
         max-width: none;
     }
 
-    /* move the mail button slightly inward so it doesn't overlap edges */
-    .mail__btn {
-        right: 16px;
-        bottom: 0px;
+    .mail__btn, .shape, .scroll__icon {
+        display: none;
     }
-
-    .scroll__icon {
-        bottom: 0px;
-    }
-
-    /* reduce shapes density and size to avoid clutter */
-    .shape { display: none; }
 
     /* ensure modal is full-width but not too tall in landscape */
     .modal {
