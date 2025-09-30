@@ -689,6 +689,11 @@ footer {
         max-height: 85vh;
     }
 
+    .modal__half {
+        width: 100%;
+        height: 100%;
+    }
+
     .section__title {
         font-size: 36px;
         margin-bottom: 28px;
